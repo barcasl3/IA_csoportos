@@ -17,6 +17,7 @@
 %>
 <head>
     <title>Bejelentkezés</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <sql:setDataSource
@@ -27,18 +28,18 @@
     user="admin"
     password="admin"
 />
-<h1>A szavazás eléréséhez be kell jelentkeznie.
+<h1>Üdvözöljük a szavazás oldalán!
 </h1>
-<br/>
+<h3>Kérjük, jelentkezzen be!</h3>
 <c:if test="${not empty param.errorMsg}">
-    <span style="color: red; font-weight: bold;">
+    <div class="error-msg">
         ${param.errorMsg}
-    </span>
+    </div>
 </c:if>
 <c:if test="${not empty param.successMsg}">
-    <span style="color: green; font-weight: bold;">
+    <div class="success-msg">
             ${param.successMsg}
-    </span>
+    </div>
 </c:if>
 <form method="POST" action="action.jsp">
     <label for="username">Felhasználónév:</label>

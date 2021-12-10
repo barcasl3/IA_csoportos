@@ -16,6 +16,7 @@
 %>
 <head>
     <title>Átirányítás...</title>
+    <link rel="stylesheet" href="style.css">
     <c:choose>
         <c:when test="${not empty param.login && not empty param.username && not empty param.password}">
             <!-- bejelentkezési kérés -->
@@ -27,6 +28,7 @@
                     <%
                         session.setAttribute("username", request.getParameter("username"));
                     %>
+                    <c:set var="fullname" value="${loginQuery.rows[0].fullname}" scope="session" />
                     <c:if test="${loginQuery.rows[0].admin}">
                         <%
                             session.setAttribute("admin", true);

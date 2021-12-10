@@ -1,0 +1,30 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.error-msg {
+    padding: 5px;
+    font-weight: bold;
+    background-color: #ff4444;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid #cc0000;
+    max-width: 30%;
+}
+
+.success-msg {
+    padding: 5px;
+    font-weight: bold;
+    background-color: #00c851;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid #007e33;
+    max-width: 30%;
+}
+form {
+    margin: 5px;
+}
+
+input {
+    margin: 5px;
+}

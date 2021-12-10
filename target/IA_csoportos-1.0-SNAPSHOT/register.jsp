@@ -15,13 +15,14 @@
 %>
 <head>
     <title>Regisztráció</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>A regisztrációhoz adja meg az adatait!</h1>
 <c:if test="${not empty param.errorMsg}">
-    <span style="color: red; font-weight: bold;">
+    <div class="error-msg">
             ${param.errorMsg}
-    </span>
+    </div>
 </c:if>
 <c:if test="${not empty param.successMsg}">
     <span style="color: green; font-weight: bold;">

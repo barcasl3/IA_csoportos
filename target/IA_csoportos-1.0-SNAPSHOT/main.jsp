@@ -24,9 +24,10 @@
 %>
 <head>
     <title>Szavazás</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Sikeres bejelentkezés!</h1>
+<h1>Üdvözöljük, ${sessionScope.fullname}!</h1>
 <%
     if(session.getAttribute("admin") != null) {
         %>
