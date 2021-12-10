@@ -75,7 +75,7 @@
         </c:when>
         <c:otherwise>
             <jsp:forward page="index.jsp">
-                <jsp:param name="errorMsg" value="Érvénytelen kérés."/>
+                <jsp:param name="errorMsg" value="Érvénytelen kérés. Próbálja újra!"/>
             </jsp:forward>
         </c:otherwise>
     </c:choose>
