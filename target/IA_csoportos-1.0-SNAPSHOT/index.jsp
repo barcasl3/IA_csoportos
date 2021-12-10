@@ -8,7 +8,7 @@
 <h1>A szavazás eléréséhez be kell jelentkeznie.
 </h1>
 <br/>
-<form method="POST" action="action.jsp">
+<form>
     <label for="username">Felhasználónév:</label>
     <input type="text" id="username" name="username"><br>
     <label for="password">Jelszó:</label>
